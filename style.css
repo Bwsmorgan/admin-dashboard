@@ -1,0 +1,152 @@
+body {
+
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+
+    display: grid;
+
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 20% 80%;
+
+    border: solid blue 1px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+
+    border: solid rgb(255, 0, 234) 1px;
+}
+
+.sidebar {
+    border: solid rgb(255, 200, 0) 1px;
+
+    grid-area: 1/1/3/2;
+    background-color: rgb(26,146,212);
+    
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+ul li {
+    background-repeat: no-repeat;
+    line-height: 20px;
+    list-style: none;
+    color: white;
+    padding: 10px;
+    fill: white;
+    /* padding-left: 30px; */
+}
+
+
+.main-content {
+    border: solid rgb(255, 140, 0) 1px;
+    background-color: #e2e8f0;
+    display: flex;
+}
+
+
+.cont{
+    display: flex;
+    width: 100%; 
+    margin: 25px 15px; 
+    border: salmon 1px solid;
+    gap: 10px;
+
+ 
+
+}
+.mc-label{
+    padding: 5px;
+
+}
+
+
+.projects {
+    
+    width: 75%;
+    border: solid rgb(133, 153, 51) 2px;
+   
+}
+
+.project-cards{
+   
+
+    border: solid rgb(51, 90, 153) 2px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    height: 92.5%;
+
+
+}
+.project-info{
+    /* border: 1px red solid; */
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(255, 187, 0) 2%, rgba(0,0,0,0) 2%);
+    padding: 20px;
+}
+
+.project-title{
+    font-size: .7rem;
+}
+
+p {
+    font-size: .55rem;
+    font-weight: 300;
+    color: #464646;
+}
+
+.project-info > span{
+    display: flex;
+    width: 80px;
+    justify-content: space-between ;
+    font-size: .5rem;
+    float: right;
+} 
+
+.ann-tre {
+    margin-left: 0;
+    width: 25%;
+    border: solid rgb(153, 82, 51) 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+
+}
+
+/* .sec {
+    border: 1px solid greenyellow;
+    
+} */
+
+.announcements {
+    border: solid rgb(9, 164, 236) 2px;
+    height: 90%;
+   
+}
+
+.trending {
+    border: solid rgb(17, 161, 223) 2px;
+    height: 84%;
+
+
+}
+
+
+.card {
+    border-radius: 7px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgb(160, 160, 160);
+}
